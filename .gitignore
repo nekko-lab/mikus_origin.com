@@ -1,0 +1,9 @@
+# Node依存関係
+node_modules/
+
+# ビルド出力
+dist/
+.next/
+
+# 環境設定ファイル
+.env
