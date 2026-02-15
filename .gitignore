@@ -7,3 +7,6 @@ dist/
 
 # 環境設定ファイル
 .env
+
+# OS依存ファイル
+.DS_Store
