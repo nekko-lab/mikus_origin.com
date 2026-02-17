@@ -22,8 +22,8 @@ spec:
           emptyDir: {}
       containers:
         - name: mikus-origin-container
-          image: "mikus-origin:local" # TODO: CIデプロイ時に ghcr.io/${{ github.repository }}:${{ github.sha }} に戻す
-          imagePullPolicy: Never
+          image: "ghcr.io/nekko-lab/mikus-origin.com:test" # ghcr.io/${{ github.repository }}:${{ github.sha }}
+          imagePullPolicy: Always
           resources:
             limits:
               memory: "2048Mi"
