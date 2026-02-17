@@ -4,6 +4,8 @@ node_modules/
 # ビルド出力
 dist/
 .next/
+#=== キャッシュ ===#
+*.tsbuildinfo
 
 # 環境設定ファイル
 .env
