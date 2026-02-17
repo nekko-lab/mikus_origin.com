@@ -23,6 +23,14 @@ const members = [
     image: '/members/namekomiso.jpg',
   },
   {
+    name: 'チバ皓リン',
+    role: ['広報'],
+    bio: '機材に憧れて入部したボカロ素人のメンバー。\nケーブルの八の字巻きが大好き。',
+    skills: ['ケーブル', '音響機材', '映像編集・映像制作'],
+    color: '#ffa500',
+    image: '/members/chibakouling.png',
+  },
+  {
     name: 'らだー',
     role: ['一般'],
     bio: 'BlenderとUnityを用いたライブ演出を担当。\nUnityのことならお任せを！',
