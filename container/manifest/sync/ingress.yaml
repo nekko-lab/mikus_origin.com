@@ -2,11 +2,11 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: mikus_origin-ingress
+  name: mikus-origin-ingress
 spec:
   # ingressClassName: cloudflare-tunnel
   rules:
-  - host: "https://mikusorigin.com/"
+  - host: "mikusorigin.com"
     http:
       paths:
       - path: /
