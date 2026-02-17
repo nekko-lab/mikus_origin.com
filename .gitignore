@@ -4,6 +4,7 @@ node_modules/
 # ビルド出力
 dist/
 .next/
+out/
 #=== キャッシュ ===#
 *.tsbuildinfo
 
