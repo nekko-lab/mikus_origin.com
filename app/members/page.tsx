@@ -229,7 +229,7 @@ export default function MembersPage() {
           }}
         >
           {[
-            { value: '6名', label: '現在の部員数' },
+            { value: `${members.length}名`, label: '現在の部員数' },
             { value: '4', label: '完成プロジェクト' },
           ].map((s, i) => (
             <div key={i} className="glass" style={{ padding: '1.5rem', borderRadius: '16px' }}>
