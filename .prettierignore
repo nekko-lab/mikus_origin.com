@@ -1,0 +1,5 @@
+# Next.jsが自動生成する型定義エントリーファイルを除外
+next-env.d.ts
+
+# その他
+LICENSE
