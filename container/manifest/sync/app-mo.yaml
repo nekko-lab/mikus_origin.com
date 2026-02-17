@@ -17,6 +17,8 @@ spec:
         prometheus.io/port: "9113"
         prometheus.io/path: "/metrics"
     spec:
+      # imagePullSecrets:
+      #   - name: ghcr-secret
       volumes:
         - name: nginx-logs
           emptyDir: {}
