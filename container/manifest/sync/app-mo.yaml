@@ -24,7 +24,7 @@ spec:
           emptyDir: {}
       containers:
         - name: mikus-origin-container
-          image: "ghcr.io/nekko-lab/mikus-origin.com:manual-test" # ghcr.io/${{ github.repository }}:${{ github.sha }}
+          image: "ghcr.io/nekko-lab/mikus_origin.com:69203ea36a2a784a695528feb5acbc4c9eb1b999" # ghcr.io/${{ github.repository }}:${{ github.sha }}
           imagePullPolicy: Always
           resources:
             limits:
@@ -59,6 +59,10 @@ spec:
   selector:
     app: app-mo
   ports:
-  - protocol: TCP
-    port: 80
-    targetPort: 80
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  template:
+    spec:
+      containers:
+        - image: ghcr.io/nekko-lab/mikus_origin.com:69203ea36a2a784a695528feb5acbc4c9eb1b999
