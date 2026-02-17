@@ -29,7 +29,7 @@ const highlights = [
   },
   {
     date: '2025.11',
-    title: '津田沼祭公演(Miku&apos;s Origin LIVE 2025 "Fire")',
+    title: '津田沼祭公演(Miku\'s Origin LIVE 2025 "Fire")',
     tag: '展示',
   },
   {
