@@ -38,18 +38,19 @@ npm install
 npm run dev
 -> https://localhost:3000
 ```
+
 で確認できます。
 
 # Scripts
 
-| コマンド | 内容 |
-| ------- | ---- |
-| ```npm run dev``` | 開発サーバー |
-| ```npm run build``` | 本番ビルド |
-| ```npm run start``` | 本番サーバー起動 |
-| ```npm run lint``` | 静的解析 |
-| ```npm run format``` | Prettier整形 |
-| ```npm run typecheck``` | 型チェック |
+| コマンド            | 内容             |
+| ------------------- | ---------------- |
+| `npm run dev`       | 開発サーバー     |
+| `npm run build`     | 本番ビルド       |
+| `npm run start`     | 本番サーバー起動 |
+| `npm run lint`      | 静的解析         |
+| `npm run format`    | Prettier整形     |
+| `npm run typecheck` | 型チェック       |
 
 # ディレクトリ構造
 
@@ -62,15 +63,20 @@ app/
  ├── activities/     # 活動内容
  └── recruit/        # 募集ページ
 ```
+
 [App Router](https://nextjs.org/docs/app)によるファイルベースルーティングを採用採用
 
 # デプロイ
+
 本サイトは **完全静的生成(SSG)** を前提としています。
+
 ```bash
 npm run build
 ```
-出力された ```.next``` を配信環境に配置してください。
+
+出力された `.next` を配信環境に配置してください。
 想定環境は以下
+
 - Nginx
 - オンプレ
 - CDN配信
