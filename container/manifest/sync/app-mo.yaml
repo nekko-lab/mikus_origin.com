@@ -22,7 +22,8 @@ spec:
           emptyDir: {}
       containers:
         - name: mikus-origin-container
-          image: "ghcr.io/${{ github.repository }}:${{ github.sha }}" # イメージタグはCIで置換される
+          image: "mikus-origin:local" # TODO: CIデプロイ時に ghcr.io/${{ github.repository }}:${{ github.sha }} に戻す
+          imagePullPolicy: Never
           resources:
             limits:
               memory: "2048Mi"
