@@ -1,0 +1,24 @@
+# 依存関係(npm ciによる環境構成を破壊する可能性があるため)
+node_modules/
+npm-debug.log
+
+# ビルド成果物
+.next/
+out/
+
+# バージョン管理システム
+.git/
+.gitignore
+
+# ドキュメント
+*.md
+LICENSE
+
+# コンテナ関連
+Dockerfile
+.dockerignore
+
+# 開発関連
+.DS_Store
+eslint.config.ts
+prettier.config.cjs

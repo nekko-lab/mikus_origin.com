@@ -4,6 +4,12 @@ node_modules/
 # ビルド出力
 dist/
 .next/
+out/
+#=== キャッシュ ===#
+*.tsbuildinfo
 
 # 環境設定ファイル
 .env
+
+# OS依存ファイル
+.DS_Store
