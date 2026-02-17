@@ -13,6 +13,6 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: mo-svc
+            name: svc-mo
             port:
               number: 80

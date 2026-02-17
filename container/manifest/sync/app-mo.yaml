@@ -2,16 +2,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: fire
+  name: mikus-origin-deployment
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: fire
+      app: app-mo
   template:
     metadata:
       labels:
-        app: fire
+        app: app-mo
       annotations:
         prometheus.io/scrape: "true"
         prometheus.io/port: "9113"
@@ -21,7 +21,7 @@ spec:
         - name: nginx-logs
           emptyDir: {}
       containers:
-        - name: fire
+        - name: mikus-origin-container
           image: "ghcr.io/${{ github.repository }}:${{ github.sha }}" # イメージタグはCIで置換される
           resources:
             limits:
@@ -51,10 +51,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: cyberrootmusic-svc
+  name: svc-mo
 spec:
   selector:
-    app: cyberrootmusic
+    app: app-mo
   ports:
   - protocol: TCP
     port: 80
