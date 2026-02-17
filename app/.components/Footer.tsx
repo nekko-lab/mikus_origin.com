@@ -69,7 +69,7 @@ export default function Footer() {
               />
             </div>
             <p style={{ fontSize: '0.875rem', color: 'var(--color-text-muted)', lineHeight: 1.6 }}>
-              ネットワークコンテンツ研究会
+              Miku&apos;s Origin
               <br />
               略して MO の公式サイト
             </p>
