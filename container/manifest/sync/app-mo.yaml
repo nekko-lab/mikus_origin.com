@@ -29,7 +29,7 @@ spec:
           resources:
             limits:
               memory: "2048Mi"
-              cpu: "1"
+              cpu: "4"
             requests:
               memory: "256Mi"
               cpu: "250m"
@@ -44,25 +44,9 @@ spec:
             - containerPort: 9113
               name: metrics
           resources:
-            requests:
-              cpu: "50m"
-              memory: "64Mi"
             limits:
+              memory: "2048Mi"
+              cpu: "2"
+            requests:
+              memory: "64Mi"
               cpu: "100m"
-              memory: "128Mi"
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: svc-mo
-spec:
-  selector:
-    app: app-mo
-  ports:
-    - protocol: TCP
-      port: 80
-      targetPort: 80
-  template:
-    spec:
-      containers:
-        - image: ghcr.io/nekko-lab/mikus_origin.com:c321b3ef30e205a51273074ca4605d21ffdef6b3
