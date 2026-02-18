@@ -24,7 +24,7 @@ spec:
           emptyDir: {}
       containers:
         - name: mikus-origin-container
-          image: "ghcr.io/nekko-lab/mikus_origin.com:69203ea36a2a784a695528feb5acbc4c9eb1b999" # ghcr.io/${{ github.repository }}:${{ github.sha }}
+          image: "ghcr.io/nekko-lab/mikus_origin.com:c321b3ef30e205a51273074ca4605d21ffdef6b3" # ghcr.io/${{ github.repository }}:${{ github.sha }}
           imagePullPolicy: Always
           resources:
             limits:
@@ -65,4 +65,4 @@ spec:
   template:
     spec:
       containers:
-        - image: ghcr.io/nekko-lab/mikus_origin.com:69203ea36a2a784a695528feb5acbc4c9eb1b999
+        - image: ghcr.io/nekko-lab/mikus_origin.com:c321b3ef30e205a51273074ca4605d21ffdef6b3
