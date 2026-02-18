@@ -4,7 +4,7 @@ kind: Ingress
 metadata:
   name: mikus-origin-ingress
 spec:
-  # ingressClassName: cloudflare-tunnel
+  ingressClassName: cloudflare-tunnel
   rules:
   - host: "mikusorigin.com"
     http:
