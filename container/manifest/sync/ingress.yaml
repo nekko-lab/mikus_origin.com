@@ -6,13 +6,13 @@ metadata:
 spec:
   ingressClassName: cloudflare-tunnel
   rules:
-  - host: "mikusorigin.com"
-    http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: svc-mo
-            port:
-              number: 80
+    - host: 'mikusorigin.com'
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: svc-mo
+                port:
+                  number: 80
