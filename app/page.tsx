@@ -23,19 +23,22 @@ const features = [
 
 const highlights = [
   {
-    date: '2026.4',
-    title: 'ニコニコ超会議',
-    tag: 'イベント',
-  },
-  {
     date: '2025.11',
     title: '津田沼祭公演(Miku\'s Origin LIVE 2025 "Fire")',
     tag: '展示',
+    url: 'https://numasai2025.nekko-lab.dev/',
+  },
+  {
+    date: '2025.11',
+    title: '津田沼祭公演(Cyber √ Music)',
+    tag: '展示',
+    url: 'https://numasai2025.nekko-lab.dev/dj-live/',
   },
   {
     date: '2024.11',
     title: '津田沼祭公演(Cyber √ Music)',
     tag: '展示',
+    url: 'https://numasai2024.nekko-lab.dev/',
   },
 ];
 
@@ -222,8 +225,11 @@ export default function Home() {
           <h2 className="section-title">活動ハイライト</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             {highlights.map((h, i) => (
-              <div
+              <a
                 key={i}
+                href={h.url}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="glass card-hover"
                 style={{
                   display: 'flex',
@@ -232,6 +238,8 @@ export default function Home() {
                   padding: '1.5rem 2rem',
                   borderRadius: '14px',
                   cursor: 'pointer',
+                  textDecoration: 'none',
+                  color: 'inherit',
                 }}
               >
                 <span
@@ -268,7 +276,7 @@ export default function Home() {
                 >
                   →
                 </span>
-              </div>
+              </a>
             ))}
           </div>
           <div style={{ textAlign: 'center', marginTop: '2.5rem' }}>
