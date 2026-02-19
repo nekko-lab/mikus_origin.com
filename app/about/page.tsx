@@ -28,13 +28,10 @@ const activities = [
 
 const schedule = [
   { month: '4月', event: 'ニコニコ超会議・春公演', type: 'event' },
-  //{ month: '5月', event: 'チーム編成・テーマ決め', type: 'planning' },
-  //{ month: '6-7月', event: 'プロジェクト開発期間', type: 'dev' },
-  //{ month: '8月', event: '夏コミ / 夏合宿', type: 'event' },
-  //{ month: '9-10月', event: 'プロジェクト開発 & 中間発表', type: 'dev' },
+  { month: '5月', event: '新入生歓迎会', type: 'recruit' },
+  { month: '9月', event: 'モーションキャプチャ', type: 'dev' },
   { month: '11月', event: '津田沼祭 出展', type: 'event' },
-  //{ month: '12月', event: '冬コミ / 年末 LT 大会', type: 'event' },
-  //{ month: '1-3月', event: '振り返り & 次年度準備', type: 'planning' },
+  { month: '2月', event: 'モーションキャプチャ', type: 'dev' },
 ];
 
 const typeColors: Record<string, string> = {
