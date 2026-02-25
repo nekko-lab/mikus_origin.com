@@ -52,7 +52,7 @@ export default function Header() {
           }}
         >
           <Image
-            src="/mikus-origin_favicon.png"
+            src="/mikus-origin_logo.png"
             alt="Miku's Origin"
             width={160}
             height={60}
