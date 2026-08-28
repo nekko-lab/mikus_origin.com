@@ -2,7 +2,19 @@
 
 import { useState } from 'react';
 
-const steps = [
+const INTERVIEW_FORM_URL =
+  'https://docs.google.com/forms/d/e/1FAIpQLSc7-gaYtAnIhgnsIs_2xPVCrnGrHGPksIZMjyDZy6eIXD1E5A/viewform?usp=dialog';
+
+type Step = {
+  num: string;
+  title: string;
+  description: string;
+  icon: string;
+  link?: string;
+  linkText?: string;
+};
+
+const steps: Step[] = [
   {
     num: '01',
     title: '説明を見る',
@@ -12,8 +24,10 @@ const steps = [
   {
     num: '02',
     title: '応募',
-    description: '公式SNSアカウント(フッター参照！)のDMで参加希望を伝えましょう',
+    description: '公式SNSアカウントのDM、または面談応募フォームから参加希望をお送りください！',
     icon: '🎉',
+    link: INTERVIEW_FORM_URL,
+    linkText: '面談応募フォーム',
   },
   {
     num: '03',
@@ -262,34 +276,28 @@ export default function RecruitPage() {
                 >
                   {s.description}
                 </p>
+                {s.link && s.linkText && (
+                  <a
+                    href={s.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-secondary"
+                    style={{
+                      marginTop: '1rem',
+                      padding: '0.6rem 1rem',
+                      fontSize: '0.85rem',
+                      color: 'var(--color-accent-miku)',
+                      borderColor: 'var(--color-border-glass)',
+                    }}
+                  >
+                    {s.linkText} →
+                  </a>
+                )}
               </div>
             ))}
           </div>
         </div>
       </section>
-
-      {/* FAQ */}
-      {/* <section className="section">
-        <h2 className="section-title" style={{ textAlign: 'center' }}>
-          よくある質問
-        </h2>
-        <p className="section-subtitle" style={{ textAlign: 'center', margin: '1rem auto 3rem' }}>
-          プレースホルダー: FAQ
-        </p>
-        <div
-          style={{
-            maxWidth: '700px',
-            margin: '0 auto',
-            display: 'flex',
-            flexDirection: 'column',
-            gap: '0.75rem',
-          }}
-        >
-          {faqs.map((faq, i) => (
-            <FAQItem key={i} q={faq.q} a={faq.a} />
-          ))}
-        </div>
-      </section> */}
     </main>
   );
 }
