@@ -85,7 +85,7 @@ const members = [
     skills: ['Unity'],
     color: '#39c5bb',
     image: '/members/rs232c.png',
-  }
+  },
 ];
 
 // function getInitials(name: string) {
